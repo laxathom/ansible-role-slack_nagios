@@ -35,3 +35,13 @@
   tags:
     - slack_nagios
     - slack_nagios-creds
+
+- name: Deploy Slack commands
+  template:
+    src: nagios-command.cfg.j2
+    dest: '{{ slack_nagios_command_incdir }}/slack.cfg'
+    owner: 'root'
+    group: 'root'
+  tags:
+    - slack_nagios
+    - slack_nagios-command

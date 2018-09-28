@@ -3,3 +3,5 @@ slack_nagios_url: "https://raw.github.com/tinyspeck/services-examples/master"
 slack_nagios_bindir: "/usr/local/bin"
 slack_nagios_domain: workspace.slack.com
 slack_nagios_token: "2323jc038jw0eucaslfknq3p0fsha9dsajilsu"
+slack_nagios_channel: noc
+slack_nagios_command_incdir: /etc/nagios/commands.d

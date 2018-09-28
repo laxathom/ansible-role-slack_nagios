@@ -1,0 +1,9 @@
+define command {
+    command_name     notify-service-by-slack
+    command_line     {{ slack_nagios_bindir }}/slack_nagios.pl -field slack_channel=#{{ slack_nagios_channel }} -field HOSTALIAS="$HOSTNAME$" -field SERVICEDESC="$SERVICEDESC$" -field SERVICESTATE="$SERVICESTATE$" -field SERVICEOUTPUT="$SERVICEOUTPUT$" -field NOTIFICATIONTYPE="$NOTIFICATIONTYPE$"
+}
+
+define command {
+    command_name     notify-host-by-slack
+    command_line     {{ slack_nagios_bindir }}/slack_nagios.pl -field slack_channel=#{{ slack_nagios_channel }} -field HOSTALIAS="$HOSTNAME$" -field HOSTSTATE="$HOSTSTATE$" -field HOSTOUTPUT="$HOSTOUTPUT$" -field NOTIFICATIONTYPE="$NOTIFICATIONTYPE$"
+}
