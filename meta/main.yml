@@ -1,0 +1,20 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: laxathom
+  description: Slack notification for nagios.
+  company: "iFeelSmart"
+  license: "MIT"
+  min_ansible_version: 2.3
+  platforms:
+    - name: EL
+      versions:
+      - all
+  galaxy_tags:
+    - monitoring
+    - nagios
+    - nagios-plugins
+    - notifications
+    - alert
+    - slack
