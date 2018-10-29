@@ -22,7 +22,7 @@
   lineinfile:
     path: "{{ slack_nagios_bindir }}/slack_nagios.pl"
     regexp: '^my \$opt_domain ='
-    line: 'my $opt_domain = "{{ slack_nagios_domain }}"'
+    line: 'my $opt_domain = "{{ slack_nagios_domain }}";'
   tags:
     - slack_nagios
     - slack_nagios-creds
@@ -31,7 +31,7 @@
   lineinfile:
     path: '{{ slack_nagios_bindir }}/slack_nagios.pl'
     regexp: '^my \$opt_token ='
-    line: 'my $opt_token = "{{ slack_nagios_token }}"'
+    line: 'my $opt_token = "{{ slack_nagios_token }}";'
   tags:
     - slack_nagios
     - slack_nagios-creds
