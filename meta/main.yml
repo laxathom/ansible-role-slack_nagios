@@ -3,6 +3,7 @@ dependencies: []
 
 galaxy_info:
   author: laxathom
+  role_name: slack_nagios
   description: Slack notification for nagios.
   company: "iFeelSmart"
   license: "MIT"
